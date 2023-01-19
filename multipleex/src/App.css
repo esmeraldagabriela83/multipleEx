@@ -1,44 +1,14 @@
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 /*-----------------my try--------------------------------------------*/
+
+
+
 
 #cards_article{
   border:1px solid red;
@@ -63,5 +33,32 @@
 }
 
 li.nav-item a{
+  text-align: left;
+}
+
+@media(min-width:768px){
+  #news-input{
+    width:50%;
+  }
+}
+
+/*-------------------------------newsletter----------------------------------------------------*/
+
+#userEmailValue{
+  background-color: DimGray;
+}
+
+#userEmailValue:hover{
+  background-color: green;
+  transition: 1s;
+}
+
+/*------------------------------learn section---------------------------------------------------*/
+#cake_img , #plate_img, #SPRINGTREE_img, #MYPHOTO_img, #cat_img, #copy_img{
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px grey;
+}
+
+#learn , #learn2{
   text-align: left;
 }
