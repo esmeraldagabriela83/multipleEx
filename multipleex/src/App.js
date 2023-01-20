@@ -1,5 +1,6 @@
-// import logo from './logo.svg';
+import {BrowserRouter as Router , Routes , Route , Link} from "react-router-dom";
 import './App.css';
+// import logo from './logo.svg';
 
 import Mytext from "./js/Mytext.js";
 import Carusel from "./js/Carusel.js";
@@ -11,8 +12,17 @@ import Boxes from "./js/Boxes.js";
 import LearnSection from "./js/LearnSection.js";
 import LearnSection2 from "./js/LearnSection2.js";
 import QuestionAccordion from "./js/QuestionAccordion.js";
+import ContactDetails from "./js/ContactDetails.js";
 import Instructors from "./js/Instructors.js";
 import Footer from "./js/Footer.js";
+import Modal from "./js/Modal.js";
+
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Info from "./pages/Info.js";
+import Contact from "./pages/Contact.js";
+import {PedroNav} from "./pages/PedroNav.js";
+import NavFinal from "./pages/NavFinal.js";
 
 function App() {
   return (
@@ -29,10 +39,30 @@ function App() {
     <LearnSection2 propColor={"DarkGoldenRod"} propNr={99} propText={"LearnSection2"}/>
     <QuestionAccordion propColor={"MediumVioletRed"} propNr={99} propText={"QuestionAccordion"}/>
     <Instructors propColor={"MediumSeaGreen"} propNr={23} propText={"Instructors"}/>
+    <ContactDetails propColor={"green"} propNr={72} propText={"ContactDetails"}/>
     <Footer propColor={"OrangeRed"} propNr={75} propText={"Footer"}/>
+    <Modal propColor={"yellow"} propNr={34} propText={"Modal"}/>
+
+    <Router>
+
+      //<PedroNav  propColor={"orange"} propNr={56} propText={"PedroNav"}/>
+      <NavFinal  propColor={"cornflowerblue"} propNr={56} propText={"NavFinal"}/>
+
+      <Routes>
+
+       <Route path="/" element={<Home  propColor={"pink"} propNr={37} propText={"Home"}/>}/>
+       <Route path="/about" element={<About  propColor={"blue"} propNr={37} propText={"About"}/>}/> 
+       <Route path="/info" element={<Info  propColor={"red"} propNr={37} propText={"Info"}/>}/> 
+       <Route path="/contact" element={<Contact  propColor={"magenta"} propNr={37} propText={"Contact"}/>}/> 
+       <Route path="*" element={<h1>Page not found</h1>}/>
+
+      </Routes>
+
+    </Router>
 
     </div>
   );
 }
 
 export default App;
+console.log("------------hello from app.js");
