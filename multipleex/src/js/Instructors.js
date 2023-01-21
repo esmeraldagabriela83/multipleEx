@@ -16,7 +16,7 @@ return(<>
   </article>
 
 
-<section id="instructors" className="bg-primary p-5">
+<article id="instructors" className="bg-primary p-5">
 
 <div className="container">
 
@@ -194,7 +194,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
 
 </div>
 
-</section>
+</article>
 
 
 

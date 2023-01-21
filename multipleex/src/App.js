@@ -1,6 +1,7 @@
 import {BrowserRouter as Router , Routes , Route , Link} from "react-router-dom";
 import './App.css';
 // import logo from './logo.svg';
+//https://www.youtube.com/watch?v=f55qeKGgB_M&t=616s
 
 import Mytext from "./js/Mytext.js";
 import Carusel from "./js/Carusel.js";
@@ -23,10 +24,14 @@ import Info from "./pages/Info.js";
 import Contact from "./pages/Contact.js";
 import {PedroNav} from "./pages/PedroNav.js";
 import NavFinal from "./pages/NavFinal.js";
+import MainPage from "./pages/MainPage.js";
+
+
+import NavbarPedro from "./pages/NavbarPedro.js";
 
 function App() {
   return (
-    <div className="App">
+    <section className="App">
 
     <Mytext propColor={"deeppink"} propNr={72} propText={"Mytext"}/>
     <Carusel propColor={"peru"} propNr={79} propText={"Carusel"}/>
@@ -60,7 +65,10 @@ function App() {
 
     </Router>
 
-    </div>
+    <NavbarPedro propColor={"DarkGoldenRod"} propNr={456} propText={"NavbarPedro"}/>
+    <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
+
+    </section>
   );
 }
 

@@ -24,7 +24,7 @@ return(<>
   <h1 style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>function component is : {propText}</h1>
   </article>
 
-  <section className="p-5">
+  <article className="p-5">
 
     <div className="container">
 
@@ -79,7 +79,7 @@ return(<>
 
     </div>
 
-  </section>
+  </article>
 
   </>);
 

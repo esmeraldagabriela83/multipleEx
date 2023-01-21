@@ -21,7 +21,7 @@ return(<>
   </article>
 
 
-<section className="p-5">
+<article className="p-5">
 
 <div className="container">
 
@@ -55,7 +55,7 @@ return(<>
 
 </div>
 
-</section>
+</article>
 
 
 </>);

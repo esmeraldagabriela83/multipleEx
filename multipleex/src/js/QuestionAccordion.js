@@ -16,7 +16,7 @@ return(<>
   </article>
 
 
-<section id="questions" className="p-5">
+<article id="questions" className="p-5">
 
   <div className="container mb-4">
 <h2 className="mb-4">FAQ</h2>
@@ -115,7 +115,7 @@ return(<>
 
   </div>
 
-</section>
+</article>
 
 
   </>);

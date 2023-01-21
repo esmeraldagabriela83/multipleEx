@@ -1,0 +1,44 @@
+@import "../variables/Variables.scss";
+
+#mytext_article{
+    margin-top: 3em;
+
+    background-color: $whiteColor;
+
+    h3:nth-of-type(1){
+        color:$redColor;
+    }
+
+    h3:nth-of-type(2){
+        color:$greenColor;
+    }
+
+    h3:nth-of-type(3){
+        color:$yellowColor;
+    }
+
+    p:nth-of-type(1){
+        color:$magentaColor;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+    }
+
+    p:nth-of-type(2){
+        color:$yellowColor;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 1px  gray;
+    }
+
+    p:nth-of-type(3){
+        color:$greenColor;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+    }
+
+button{
+    @include buttonStyleSecond($greenColor , 2rem);
+    padding-bottom:0.5em;
+}
+
+}
