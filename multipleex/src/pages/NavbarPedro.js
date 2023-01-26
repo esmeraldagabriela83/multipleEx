@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import '../App.css';
-import '../styles/NavbarPedro.scss';
+//import '../styles/NavbarPedro.scss';
 
 function NavbarPedro(props){
 

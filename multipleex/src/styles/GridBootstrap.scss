@@ -1,0 +1,99 @@
+
+#grid_bootstrap_id{
+    background-color: $whiteColor;
+    padding: 3em;
+
+
+    .row{
+border:1px solid $greenColor;
+padding: 3em;
+
+
+    .col{
+        border:1px solid $redColor;
+        padding: 1em;
+    }
+
+    .col-sm{
+        border:1px solid $yellowColor;
+        padding: 1em;
+    }
+
+    .col-md{
+        border:1px solid $blackColor;
+        padding: 1em;
+    }
+
+    .col-md{
+        border:1px solid $MidnightBlue;
+        padding: 1em;
+    }
+
+    .col-md-6{
+        border:1px solid $colorNewYELLOW;
+        padding: 1em;
+    }
+
+/*--------------------------------------------------------------*/
+
+    .col-lg-8{
+        border:1px solid $colorNewGreen;
+        padding: 1em; 
+        
+        img{
+            box-shadow: 2px 2px 2px gray;
+        }
+    }
+
+    .col-lg-4{
+        border:1px solid $MidnightBlue;
+        padding: 1em;
+
+        h3{
+            text-shadow: 1px 1px 1px gray;
+        }
+        
+        h1.display-6{
+            box-shadow: 1px 1px 1px gray;
+            padding:0.3em;
+            text-shadow: 1px 1px 1px gray;
+        }
+
+        button.btn-secondary{
+            @include buttonStyle();
+            box-shadow: 2px 2px 2px gray;
+        }
+
+        button.btn-danger{
+            @include buttonStyleSecond($colorNewGreen , 1.7rem);
+            box-shadow: 1px 1px 1px gray;
+        }
+
+    }
+
+    p.lead{
+        color:$magentaColor;
+    }
+
+    p small{
+        color:$greenColor;
+    }
+
+    /*-------------------------------------------------------*/
+
+    div.col-4{
+        border:1px solid $greenColor;
+        background-color: aqua;
+        box-shadow: 2px 2px 2px gray;
+    }
+
+    div.col-8 .toast{
+        box-shadow: 1px 1px 1px pink;
+    }
+
+
+    }
+
+
+
+}

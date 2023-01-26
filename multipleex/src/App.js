@@ -15,7 +15,7 @@ import LearnSection2 from "./js/LearnSection2.js";
 import QuestionAccordion from "./js/QuestionAccordion.js";
 import ContactDetails from "./js/ContactDetails.js";
 import Instructors from "./js/Instructors.js";
-import Footer from "./js/Footer.js";
+
 import Modal from "./js/Modal.js";
 
 import Home from "./pages/Home.js";
@@ -24,10 +24,20 @@ import Info from "./pages/Info.js";
 import Contact from "./pages/Contact.js";
 import {PedroNav} from "./pages/PedroNav.js";
 import NavFinal from "./pages/NavFinal.js";
-import MainPage from "./pages/MainPage.js";
-
 
 import NavbarPedro from "./pages/NavbarPedro.js";
+import MainPage from "./pages/MainPage.js";
+import GridBootstrap from "./js/GridBootstrap.js";
+import Footer from "./js/Footer.js";
+
+
+
+
+import "./styles/main.scss";
+
+
+
+
 
 function App() {
   return (
@@ -45,12 +55,12 @@ function App() {
     <QuestionAccordion propColor={"MediumVioletRed"} propNr={99} propText={"QuestionAccordion"}/>
     <Instructors propColor={"MediumSeaGreen"} propNr={23} propText={"Instructors"}/>
     <ContactDetails propColor={"green"} propNr={72} propText={"ContactDetails"}/>
-    <Footer propColor={"OrangeRed"} propNr={75} propText={"Footer"}/>
+
     <Modal propColor={"yellow"} propNr={34} propText={"Modal"}/>
 
     <Router>
 
-      //<PedroNav  propColor={"orange"} propNr={56} propText={"PedroNav"}/>
+      <PedroNav  propColor={"orange"} propNr={56} propText={"PedroNav"}/>
       <NavFinal  propColor={"cornflowerblue"} propNr={56} propText={"NavFinal"}/>
 
       <Routes>
@@ -67,6 +77,8 @@ function App() {
 
     <NavbarPedro propColor={"DarkGoldenRod"} propNr={456} propText={"NavbarPedro"}/>
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
+    <GridBootstrap propColor={"Chocolate "} propNr={48} propText={"GridBootstrap"}/>
+    <Footer propColor={"OrangeRed"} propNr={75} propText={"Footer"}/>
 
     </section>
   );

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import '../App.css';
-import '../styles/MainPage.scss';
+//import '../styles/MainPage.scss';
 
 function MainPage(props){
 

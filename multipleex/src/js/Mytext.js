@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import '../styles/Mytext.scss';
+//import '../styles/Mytext.scss';
 
 //https://getbootstrap.com/docs/5.2/components/dropdowns/
 //https://getbootstrap.com/docs/5.2/components/accordion/
