@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import '../App.css';
 
@@ -20,7 +20,7 @@ return(
 
 <article style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>
   <h1 style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>function component is : {propText}</h1>
-  </article>
+</article>
 
 
 
@@ -28,7 +28,7 @@ return(
 
 <div className="container">
 
-<a href="#" className="navbar-brand">Frontend tutorial</a>
+<a href="#" className="navbar-brand">NavFinal</a>
 
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
 <span className="navbar-toggler-icon"></span>

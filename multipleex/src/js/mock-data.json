@@ -26,5 +26,26 @@
         "price":40,
         "imgItem":"./images/wallet.jpg",
         "itemDetails":"lorem item 4"
-      }
+      },
+      {
+        "id": 5,
+        "name": "buy ceainic",
+        "price":50,
+        "imgItem":"./images/ceainic.jpg",
+        "itemDetails":"lorem item 5"
+      },
+      {
+        "id": 6,
+        "name": "buy the coffee",
+        "price":60,
+        "imgItem":"./images/coffee.jpg",
+        "itemDetails":"lorem item 6"
+      },
+      {
+          "id": 7,
+          "name": "buy the capsuni",
+          "price":70,
+          "imgItem":"./images/capsuni.jpg",
+          "itemDetails":"lorem item 7"
+        }
   ]

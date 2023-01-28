@@ -2,7 +2,7 @@
 import React, {useState} from "react";
 import {BrowserRouter as Router , Routes , Route , Link} from "react-router-dom";
 
-import dataItem from "./js/mock-data.json";
+
 import './App.css';
 // import logo from './logo.svg';
 //https://www.youtube.com/watch?v=f55qeKGgB_M&t=616s
@@ -29,16 +29,32 @@ import Contact from "./pages/Contact.js";
 import {PedroNav} from "./pages/PedroNav.js";
 import NavFinal from "./pages/NavFinal.js";
 
+
+
 import NavbarPedro from "./pages/NavbarPedro.js";
 import MainPage from "./pages/MainPage.js";
 import GridBootstrap from "./js/GridBootstrap.js";
 import TableBootstrap from "./js/TableBootstrap.js";
+import BuyItem from "./js/BuyItem.js";
+import Persons from "./js/Persons.js";
+
+
+
+import Page1 from "./pages/Page1.js";
+import Page2 from "./pages/Page2.js";
+import Page3 from "./pages/Page3.js";
+import Page4 from "./pages/Page4.js";
+import Page5 from "./pages/Page5.js";
+import Pagination from "./pages/Pagination.js";
+
 import Footer from "./js/Footer.js";
 
 
 
 
 import "./styles/main.scss";
+
+
 
 
 const pedroText="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.";
@@ -114,39 +130,29 @@ return(<>
 
 //----------------------------------------------
 
-const BuyItem=(props) =>{
-  //destructurare props
-  const {propColor , propNr , propText}=props;
-  console.log("props are: " , propColor , propNr , propText);
+const userSpEDRO=[
+  {name:"Jeni" , age:78},
+  {name:"Ana" , age:98},
+  {name:"Costache" , age:38},
+  {name:"Zoe" , age:56},
+];
 
-  //--------------------------
 
-  const [items , setItems]=useState(dataItem);
+//--------------------------------------------------------
 
- return(<>
- 
-{items.map((item , index) =>{
-  //map are intotdeauna return
-  return(<>
-  <div className="row align-items-center justify-content-center">
+const planets=[
+  {name:"Mars" , isGasPlanet:false},
+  {name:"Earth" , isGasPlanet:false},
+  {name:"Jupiter" , isGasPlanet:true},
+  {name:"Venus" , isGasPlanet:false},
+  {name:"Neptun" , isGasPlanet:true},
+  {name:"Uranius" , isGasPlanet:true},
+];
 
-  <div key={index} className="card my-1" style={{width: "50vw" , border:`1px solid ${propColor}`}}>
-  <img src={item.imgItem} className="card-img-top img-fluid" alt="item-photo"/>
-    <div className="card-body">
-      <h5 className="card-title">{item.id}{item.name}</h5>
-      <p className="card-text">{item.itemDetails}</p>
-      <a href="#" className="btn btn-primary">{item.price}</a>
-    </div>
-  </div>
+//(time < 18) ? printf("Good day.") : printf("Good evening.");
+//https://www.w3schools.com/c/c_conditions_short_hand.php
 
-  </div>
-</>);
-})}
-
- </>);
-
-}
-
+//----------------------------------------
 
 function App() {
   return (
@@ -171,6 +177,7 @@ function App() {
 
       <PedroNav  propColor={"orange"} propNr={56} propText={"PedroNav"}/>
       <NavFinal  propColor={"cornflowerblue"} propNr={56} propText={"NavFinal"}/>
+      
 
       <Routes>
 
@@ -230,7 +237,8 @@ function App() {
     <User2 propColor={"yellow"} propName={"Andreea"} propImg={"./images/springtree.JPG"} propAge={78} propEmail={"andreea@yahoo.com"} propText={"lorem user 2"}/>
     <User2 propColor={"green"} propName={"Mirabela"} propImg={"./images/yellowCV.JPG"} propAge={73} propEmail={"mirabel@yahoo.com"} propText={"lorem user 22"}/>
     <User2 propColor={"blue"} propName={"Tony"} propImg={"./images/bostani.JPG"} propAge={32} propEmail={"tony@yahoo.com"} propText={"lorem user 222"}/>
-    <BuyItem propColor={"skyblue"} propNr={43} propText={"BuyItem"}/>
+
+    <BuyItem propColor={"tomato"} propNr={43} propText={"BuyItem"}/>
 
 
     <article className="container">
@@ -240,7 +248,10 @@ function App() {
           <img src="./images/bicycle.jpg" className="card-img-top" alt="card_bicycle"/>
           <div className="card-body">
             <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p className="card-text">
+              article with bootstrap card
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            </p>
             <a href="#" className="btn btn-primary">Go somewhere</a>
           </div>
         </div>
@@ -248,6 +259,46 @@ function App() {
 
     </article>
 
+    <Persons propColor={"magenta"} propNr={63} propText={"Persons"}/>
+
+
+    {userSpEDRO.map((personpersonPedro , index) =>{
+      //map are intotdeauna return
+      return(<>
+      <div key={index} className="container" style={{border:"1px solid forestgreen" , padding:"1em"}}>
+        <h3>{personpersonPedro.name} has {personpersonPedro.age}</h3>
+      </div>
+      </>);
+    })}
+
+
+    {planets.map((planet , index) =>{
+      //map are intotdeauna return
+    
+       if(planet.isGasPlanet) return <h3 style={{color:"indigo"}}>{planet.name} is gas planet .</h3> ;
+
+    })}
+
+{/* //short if */}
+{planets.map((planet , index) => planet.isGasPlanet && <h3 style={{color:"magenta"}}>{planet.name} is gas planet .</h3>)}
+
+
+    <Router>
+     
+      <Pagination propColor={"skyblue"} propNr={25} propText={"Pagination"}/>
+
+      <Routes>
+
+      <Route path="/page1" element={<Page1  propColor={"darkmagenta"} propNr={537} propText={"Page1"}/>}/>
+      <Route path="/page2" element={<Page2  propColor={"floralwhite"} propNr={527} propText={"Page2"}/>}/>
+      <Route path="/page3" element={<Page3  propColor={"pink"} propNr={127} propText={"Page3"}/>}/>
+      <Route path="/page4" element={<Page4  propColor={"olive"} propNr={187} propText={"Page4"}/>}/>
+      <Route path="/page5" element={<Page5  propColor={"rgb(157, 166, 212)"} propNr={237} propText={"Page5"}/>}/>
+
+      </Routes>
+
+     </Router>
+    
     <Footer propColor={"OrangeRed"} propNr={75} propText={"Footer"}/>
 
     </section>
