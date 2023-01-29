@@ -37,7 +37,12 @@ import GridBootstrap from "./js/GridBootstrap.js";
 import TableBootstrap from "./js/TableBootstrap.js";
 import BuyItem from "./js/BuyItem.js";
 import Persons from "./js/Persons.js";
+import PersonsIf from "./js/PersonsIf.js";
+import PersonsIf2 from "./js/PersonsIf2.js";
 
+
+import IncreaseNr from "./js/IncreaseNr.js";
+import InputPedro from "./js/InputPedro.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -135,8 +140,65 @@ const userSpEDRO=[
   {name:"Ana" , age:98},
   {name:"Costache" , age:38},
   {name:"Zoe" , age:56},
+  {name:"Aura" , age:12},
+  {name:"Maria" , age:74},
+  {name:"Dumitru" , age:54},
+  {name:"Denisa" , age:20},
 ];
 
+const personsOver30=(event) =>{
+  event.preventDefault();
+  console.log("you clicked to show over 30 persons");
+
+  const over30btn=document.getElementById("over30btn");
+  over30btn.style.backgroundColor="pink";
+
+  const over30paragraph=document.getElementById("over30paragraph");
+  over30paragraph.style.border="3px dotted pink";
+
+  const alleachPerson=document.querySelectorAll(".eachPerson");
+
+
+  for(let i=0 ; i<userSpEDRO.length ; i++){
+    if(userSpEDRO[i].age >= 30){
+      console.log("userSpEDRO[i] over 30 is : " , userSpEDRO[i]);
+      console.log(typeof(userSpEDRO[i]));
+
+      over30paragraph.style.color="pink";
+      over30paragraph.innerText="persons over 30";
+
+      alleachPerson[i].innerText=userSpEDRO[i].name +" is over or 30 years old.";
+      alleachPerson[i].style.color="pink";
+    }
+  }
+}
+
+const personsUnder30=(event) =>{
+  event.preventDefault();
+  console.log("you clicked to show under 30 persons");
+
+  const under30btn=document.getElementById("under30btn");
+  under30btn.style.backgroundColor="yellowgreen";
+
+  const under30paragraph=document.getElementById("under30paragraph");
+  under30paragraph.style.border="3px dotted green";
+
+  const alleachPerson=document.querySelectorAll(".eachPerson");
+
+
+  for(let i=0 ; i<userSpEDRO.length ; i++){
+    if(userSpEDRO[i].age < 30){
+      console.log("userSpEDRO[i] over 30 is : " , userSpEDRO[i]);
+      console.log(typeof(userSpEDRO[i]));
+
+      under30paragraph.style.color="yellowgreen";
+      under30paragraph.innerText="persons under 30";
+
+      alleachPerson[i].innerText=userSpEDRO[i].name +" is under 30 years old.";
+      alleachPerson[i].style.color="yellowgreen";
+    }
+  }
+}
 
 //--------------------------------------------------------
 
@@ -151,6 +213,44 @@ const planets=[
 
 //(time < 18) ? printf("Good day.") : printf("Good evening.");
 //https://www.w3schools.com/c/c_conditions_short_hand.php
+
+
+  const showPlanetsBtn=(event) =>{
+    event.preventDefault();
+    console.log("you clicked to show the planets");
+
+
+    const eachPlanetAll=document.querySelectorAll('.eachPlanet');
+
+    for(let i=0 ; i<planets.length ; i++){
+      eachPlanetAll[i].innerText=planets[i].name + ' is a planet .' 
+    }
+
+
+  }
+
+  //-----------------------------------------------------------------
+
+  const showGasPlanetsBtn=(event) =>{
+    event.preventDefault();
+    console.log("you clicked to show the gas planets");
+
+    const gasPlanetAll=document.querySelectorAll('.gasPlanet');
+
+    for(let i=0 ; i<planets.length ; i++){
+
+      if(planets[i].isGasPlanet === true){
+        gasPlanetAll[i].style.color="green";
+        gasPlanetAll[i].innerText=planets[i].name + " is gas planet.";
+      }else{
+        gasPlanetAll[i].style.color="red";
+        gasPlanetAll[i].innerText=planets[i].name + " is not gas planet.";
+      }
+
+    }
+
+
+  }
 
 //----------------------------------------
 
@@ -260,28 +360,85 @@ function App() {
     </article>
 
     <Persons propColor={"magenta"} propNr={63} propText={"Persons"}/>
+    <PersonsIf propColor={"cornflowerblue"} propNr={43} propText={"PersonsIf"}/>
+    <PersonsIf2 propColor={"skyblue"} propNr={432} propText={"PersonsIf2"}/>
 
+    <article style={{padding:"1em" , margin:"1em" , border:"3px solid tomato"}}>
+      <p>userSpEDRO</p>
 
-    {userSpEDRO.map((personpersonPedro , index) =>{
-      //map are intotdeauna return
-      return(<>
-      <div key={index} className="container" style={{border:"1px solid forestgreen" , padding:"1em"}}>
-        <h3>{personpersonPedro.name} has {personpersonPedro.age}</h3>
-      </div>
-      </>);
-    })}
+      {userSpEDRO.map((personpersonPedro , index) =>{
+        //map are intotdeauna return
+        return(<>
+        <div key={index} className="container" style={{border:"1px solid forestgreen" , padding:"1em"}}>
+          <h3>{personpersonPedro.name} has {personpersonPedro.age}</h3>
+        </div>
+        </>);
+      })}
 
+      <ul>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+        <li className="eachPerson"></li>
+      </ul>
 
-    {planets.map((planet , index) =>{
-      //map are intotdeauna return
+      <p id="over30paragraph"></p>
+      <button id="over30btn" onClick={personsOver30}>show persons over 30</button>
     
-       if(planet.isGasPlanet) return <h3 style={{color:"indigo"}}>{planet.name} is gas planet .</h3> ;
+      <p id="under30paragraph"></p>
+      <button id="under30btn" onClick={personsUnder30}>show persons under 30</button>
+      
+    </article>
 
-    })}
+    <article style={{padding:"1em" , margin:"1em" , border:"3px solid aqua"}}>
+        <div className="container">
+          planets
 
-{/* //short if */}
-{planets.map((planet , index) => planet.isGasPlanet && <h3 style={{color:"magenta"}}>{planet.name} is gas planet .</h3>)}
+            {planets.map((planet , index) =>{
+              //map are intotdeauna return
+            
+              if(planet.isGasPlanet) return <h3 style={{color:"indigo"}}>{planet.name} is gas planet .</h3> ;
 
+            })}
+
+        {/* //short if */}
+        {planets.map((planet , index) => planet.isGasPlanet && <h3 style={{color:"magenta"}}>{planet.name} is gas planet .</h3>)}
+
+        <div className="container">
+          <ul>
+            <li className="eachPlanet"></li>
+            <li className="eachPlanet"></li>
+            <li className="eachPlanet"></li>
+            <li className="eachPlanet"></li>
+            <li className="eachPlanet"></li>
+            <li className="eachPlanet"></li>
+          </ul>
+          <button onClick={showPlanetsBtn}>show planets</button>
+        </div>
+        
+
+        <div className="container">
+          <ul>
+            <li className="gasPlanet"></li>
+            <li className="gasPlanet"></li>
+            <li className="gasPlanet"></li>
+            <li className="gasPlanet"></li>
+            <li className="gasPlanet"></li>
+            <li className="gasPlanet"></li>
+          </ul>
+          <button onClick={showGasPlanetsBtn}>show kind of planets</button>
+        </div>
+
+
+        </div>
+    </article>
+
+    <IncreaseNr propColor={"darkmagenta"} propNr={23} propText={"IncreaseNr"}/>
+    <InputPedro propColor={"olive"} propNr={27} propText={"InputPedro"}/>
 
     <Router>
      
