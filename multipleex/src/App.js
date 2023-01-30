@@ -43,6 +43,9 @@ import PersonsIf2 from "./js/PersonsIf2.js";
 
 import IncreaseNr from "./js/IncreaseNr.js";
 import InputPedro from "./js/InputPedro.js";
+import ShowHide from "./js/ShowHide.js";
+import CounterPedro from "./js/CounterPedro.js";
+import Bulb from "./js/Bulb.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -270,6 +273,7 @@ function App() {
     <QuestionAccordion propColor={"MediumVioletRed"} propNr={99} propText={"QuestionAccordion"}/>
     <Instructors propColor={"MediumSeaGreen"} propNr={23} propText={"Instructors"}/>
     <ContactDetails propColor={"green"} propNr={72} propText={"ContactDetails"}/>
+   
 
     <Modal propColor={"yellow"} propNr={34} propText={"Modal"}/>
 
@@ -439,6 +443,9 @@ function App() {
 
     <IncreaseNr propColor={"darkmagenta"} propNr={23} propText={"IncreaseNr"}/>
     <InputPedro propColor={"olive"} propNr={27} propText={"InputPedro"}/>
+    <ShowHide propColor={"Chartreuse"} propNr={257} propText={"ShowHide"}/>
+    <CounterPedro propColor={"DarkGoldenRod"} propNr={2057} propText={"CounterPedro"}/>
+    <Bulb propColor={"DeepPink"} propNr={2057} propText={"Bulb"}/>
 
     <Router>
      
