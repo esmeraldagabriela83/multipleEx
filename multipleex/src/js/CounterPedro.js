@@ -21,7 +21,7 @@ return(<>
   
 <article style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>
 
-<h3>{count}</h3>
+<h3 style={{color:(count === 0 ? "red" : "green")}}>count is : {count}</h3>
 
 <button onClick={(event) => setCount(count + 1)}>Increase</button>
 <button onClick={(event) => setCount(count - 1)}>Decrease</button>

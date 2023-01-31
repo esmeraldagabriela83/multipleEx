@@ -45,7 +45,12 @@ import IncreaseNr from "./js/IncreaseNr.js";
 import InputPedro from "./js/InputPedro.js";
 import ShowHide from "./js/ShowHide.js";
 import CounterPedro from "./js/CounterPedro.js";
+import CounterPedro2 from "./js/CounterPedro2.js";
+
 import Bulb from "./js/Bulb.js";
+import BulbContent from "./js/BulbContent.js";
+import Cat from "./js/Cat.js";
+import CatAxios from "./js/CatAxios.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -445,7 +450,11 @@ function App() {
     <InputPedro propColor={"olive"} propNr={27} propText={"InputPedro"}/>
     <ShowHide propColor={"Chartreuse"} propNr={257} propText={"ShowHide"}/>
     <CounterPedro propColor={"DarkGoldenRod"} propNr={2057} propText={"CounterPedro"}/>
+    <CounterPedro2 propColor={"aqua"} propNr={1057} propText={"CounterPedro2"}/>
     <Bulb propColor={"DeepPink"} propNr={2057} propText={"Bulb"}/>
+    <BulbContent propColor={"DeepPink"} propNr={2057} propText={"BulbContent"}/>
+    <Cat propColor={"chocolate"} propNr={27} propText={"Cat"}/>
+    <CatAxios propColor={"forestgreen"} propNr={20} propText={"CatAxios"}/>
 
     <Router>
      

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import '../App.css';
 
 
@@ -10,6 +10,28 @@ function Bulb(props){
 
   //---------------------------------
 //discord 16.05 2022 grup general
+
+const style = {
+  width:"100px",
+  height:"100px",
+  border:"solid #333 3px",
+  borderRadius:"50%",
+  display:"flex",
+  justifyContent: "center",
+  alignItems:"center"
+}
+
+//---------------------------------
+
+const [bulbState,setBulbState] = useState(false);
+
+const handleClick=(event , statusParam) =>{
+  event.preventDefault();
+  console.log("event",event.target);
+  console.log("status",statusParam);
+  setBulbState(statusParam);
+}
+
   //----------------------------------
 
 return(<>
@@ -19,7 +41,10 @@ return(<>
   </article>
 
 
+<div className="container" style={{...style, backgroundColor:(bulbState ? "yellow" : "white")}}>
 
+<button onClick={(event) => handleClick(event , !bulbState)}>{bulbState ? "Off" : "On"}</button>
+</div>
 
 
   </>);
