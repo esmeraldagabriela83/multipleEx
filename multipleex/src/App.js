@@ -51,6 +51,9 @@ import Bulb from "./js/Bulb.js";
 import BulbContent from "./js/BulbContent.js";
 import Cat from "./js/Cat.js";
 import CatAxios from "./js/CatAxios.js";
+import Agify from "./js/Agify.js";
+import Joke from "./js/Joke.js";
+import RapidFood from "./js/RapidFood.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -455,6 +458,9 @@ function App() {
     <BulbContent propColor={"DeepPink"} propNr={2057} propText={"BulbContent"}/>
     <Cat propColor={"chocolate"} propNr={27} propText={"Cat"}/>
     <CatAxios propColor={"forestgreen"} propNr={20} propText={"CatAxios"}/>
+    <Agify propColor={"crimson"} propNr={200} propText={"Agify"}/>
+    <Joke propColor={"DimGray"} propNr={210} propText={"Joke"}/>
+    <RapidFood propColor={"Darkorange"} propNr={250} propText={"RapidFood"}/>
 
     <Router>
      

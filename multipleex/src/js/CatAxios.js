@@ -21,7 +21,7 @@ const handleCatFact =(event) =>{
      console.log("you clicked to show cat info");
 
      Axios.get("https://catfact.ninja/fact").then((response) =>{
-        console.log("response.data" , response.data);
+        console.log("//// cat response.data" , response.data);
         console.log(typeof(response));
         console.log(typeof(response.data));
         console.log(response.data.fact)
