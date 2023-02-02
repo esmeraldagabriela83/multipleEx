@@ -53,7 +53,9 @@ import Cat from "./js/Cat.js";
 import CatAxios from "./js/CatAxios.js";
 import Agify from "./js/Agify.js";
 import Joke from "./js/Joke.js";
-import RapidFood from "./js/RapidFood.js";
+import Tasty from "./js/Tasty.js";
+import Recipe from "./js/Recipe.js";
+import Dessert from "./js/Dessert.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -460,7 +462,9 @@ function App() {
     <CatAxios propColor={"forestgreen"} propNr={20} propText={"CatAxios"}/>
     <Agify propColor={"crimson"} propNr={200} propText={"Agify"}/>
     <Joke propColor={"DimGray"} propNr={210} propText={"Joke"}/>
-    <RapidFood propColor={"Darkorange"} propNr={250} propText={"RapidFood"}/>
+    <Tasty propColor={"Chartreuse"} propNr={215} propText={"Tasty"}/>
+    {/* <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/> */}
+    <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
 
     <Router>
      
