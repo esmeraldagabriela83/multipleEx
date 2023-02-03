@@ -56,6 +56,8 @@ import Joke from "./js/Joke.js";
 import Tasty from "./js/Tasty.js";
 import Recipe from "./js/Recipe.js";
 import Dessert from "./js/Dessert.js";
+import Food from "./js/Food.js";
+import Living from "./js/Living.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -463,8 +465,10 @@ function App() {
     <Agify propColor={"crimson"} propNr={200} propText={"Agify"}/>
     <Joke propColor={"DimGray"} propNr={210} propText={"Joke"}/>
     <Tasty propColor={"Chartreuse"} propNr={215} propText={"Tasty"}/>
-    {/* <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/> */}
+    <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/>
     <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
+    <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/>
+    <Living d propColor={"green"} propNr={2315} propText={"Living"}/>
 
     <Router>
      
