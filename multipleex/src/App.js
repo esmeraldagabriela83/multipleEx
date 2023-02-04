@@ -58,6 +58,9 @@ import Recipe from "./js/Recipe.js";
 import Dessert from "./js/Dessert.js";
 import Food from "./js/Food.js";
 import Living from "./js/Living.js";
+import Movie from "./js/Movie.js";
+import Food2 from "./js/Food2.js";
+import TravelAdvisor from "./js/TravelAdvisor.js";
 
 
 import Page1 from "./pages/Page1.js";
@@ -469,6 +472,9 @@ function App() {
     <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
     <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/>
     <Living d propColor={"green"} propNr={2315} propText={"Living"}/>
+    <Movie d propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/>
+    <Food2 d propColor={"Darkorange"} propNr={315} propText={"Food2"}/>
+    <TravelAdvisor d propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/>
 
     <Router>
      

@@ -75,7 +75,7 @@ return(<>
 <label htmlFor="userRequest">Type a food :</label><br></br>
 <input type="text" id="userRequest" value={query} onChange={onChangeHandler}/><br></br>
 
-<button type="submit">submit</button>
+<button type="submit">submit food</button>
 
 </form>
 
