@@ -61,7 +61,8 @@ import Living from "./js/Living.js";
 import Movie from "./js/Movie.js";
 import Food2 from "./js/Food2.js";
 import TravelAdvisor from "./js/TravelAdvisor.js";
-
+import Restaurant from "./js/Restaurant.js";
+import CarDataAPI from "./js/CarDataAPI.js";
 
 import Page1 from "./pages/Page1.js";
 import Page2 from "./pages/Page2.js";
@@ -471,10 +472,12 @@ function App() {
     <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/>
     <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
     <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/>
-    <Living d propColor={"green"} propNr={2315} propText={"Living"}/>
-    <Movie d propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/>
-    <Food2 d propColor={"Darkorange"} propNr={315} propText={"Food2"}/>
-    <TravelAdvisor d propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/>
+    <Living propColor={"green"} propNr={2315} propText={"Living"}/>
+    <Movie propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/>
+    <Food2 propColor={"Darkorange"} propNr={315} propText={"Food2"}/>
+    <TravelAdvisor propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/>
+    <Restaurant propColor={"LimeGreen"} propNr={315} propText={"Restaurant"}/>
+    <CarDataAPI propColor={"LightSlateGray"} propNr={3155} propText={"CarDataAPI"}/>
 
     <Router>
      
