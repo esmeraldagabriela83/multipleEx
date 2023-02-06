@@ -54,15 +54,19 @@ import CatAxios from "./js/CatAxios.js";
 import Agify from "./js/Agify.js";
 import Joke from "./js/Joke.js";
 import Tasty from "./js/Tasty.js";
-import Recipe from "./js/Recipe.js";
+//import Recipe from "./js/Recipe.js";
 import Dessert from "./js/Dessert.js";
 import Food from "./js/Food.js";
 import Living from "./js/Living.js";
-import Movie from "./js/Movie.js";
+//import Movie from "./js/Movie.js";
 import Food2 from "./js/Food2.js";
-import TravelAdvisor from "./js/TravelAdvisor.js";
+//import TravelAdvisor from "./js/TravelAdvisor.js";
 import Restaurant from "./js/Restaurant.js";
 import CarDataAPI from "./js/CarDataAPI.js";
+//import DoppelAvatars from "./js/DoppelAvatars.js";
+//import FlightRadar from "./js/FlightRadar.js";
+//import LocalBusiness from "./js/LocalBusiness.js";
+
 
 import Page1 from "./pages/Page1.js";
 import Page2 from "./pages/Page2.js";
@@ -311,7 +315,14 @@ function App() {
 
     </Router>
 
+
     <NavbarPedro propColor={"DarkGoldenRod"} propNr={456} propText={"NavbarPedro"}/>
+
+    <ul>
+      <li style={{padding:"1em" , border:"1px solid brown", margin:"0.5em"}}><a href="page1.html">page 1</a></li>
+      <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page2.html">page 2</a></li>
+    </ul>
+
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
     <GridBootstrap propColor={"Chocolate "} propNr={48} propText={"GridBootstrap"}/>
 
@@ -469,15 +480,22 @@ function App() {
     <Agify propColor={"crimson"} propNr={200} propText={"Agify"}/>
     <Joke propColor={"DimGray"} propNr={210} propText={"Joke"}/>
     <Tasty propColor={"Chartreuse"} propNr={215} propText={"Tasty"}/>
-    <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/>
+    {/* <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/> */}
     <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
     <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/>
     <Living propColor={"green"} propNr={2315} propText={"Living"}/>
-    <Movie propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/>
+    {/* <Movie propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/> */}
     <Food2 propColor={"Darkorange"} propNr={315} propText={"Food2"}/>
-    <TravelAdvisor propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/>
+    {/* <TravelAdvisor propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/> */}
     <Restaurant propColor={"LimeGreen"} propNr={315} propText={"Restaurant"}/>
-    <CarDataAPI propColor={"LightSlateGray"} propNr={3155} propText={"CarDataAPI"}/>
+    {/* <CarDataAPI propColor={"LightSlateGray"} propNr={3155} propText={"CarDataAPI"}/> */}
+    {/* <DoppelAvatars propColor={"DarkViolet"} propNr={375} propText={"DoppelAvatars"}/> */}
+    {/* <FlightRadar propColor={"DarkKhaki"} propNr={30} propText={"FlightRadar"}/> */}
+    {/* <LocalBusiness propColor={"DarkTurquoise"} propNr={50} propText={"LocalBusiness"}/> */}
+
+
+   
+
 
     <Router>
      

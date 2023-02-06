@@ -18,45 +18,45 @@ const [recipe , setRecipe]=useState([]);
 //-----------------------------------
 
 useEffect(()=>{
-  const options = {
-    method: 'GET',
-    url: 'https://low-carb-recipes.p.rapidapi.com/search',
-    params: {
-      name: 'cake',
-      tags: 'keto;dairy-free',
-      includeIngredients: 'egg;butter',
-      excludeIngredients: 'cinnamon',
-      maxPrepareTime: '10',
-      maxCookTime: '20',
-      maxCalories: '500',
-      maxNetCarbs: '5',
-      maxSugar: '3',
-      maxAddedSugar: '0',
-      limit: '10'
-    },
-    headers: {
-      'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-      'X-RapidAPI-Host': 'low-carb-recipes.p.rapidapi.com'
-    }
-  };
+  // const options = {
+  //   method: 'GET',
+  //   url: 'https://low-carb-recipes.p.rapidapi.com/search',
+  //   params: {
+  //     name: 'cake',
+  //     tags: 'keto;dairy-free',
+  //     includeIngredients: 'egg;butter',
+  //     excludeIngredients: 'cinnamon',
+  //     maxPrepareTime: '10',
+  //     maxCookTime: '20',
+  //     maxCalories: '500',
+  //     maxNetCarbs: '5',
+  //     maxSugar: '3',
+  //     maxAddedSugar: '0',
+  //     limit: '10'
+  //   },
+  //   headers: {
+  //     'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+  //     'X-RapidAPI-Host': 'low-carb-recipes.p.rapidapi.com'
+  //   }
+  // };
   
-  axios.request(options).then(function (response) {
-      console.log("...response.data is: " , response.data);
-      console.log("...response.data.length is: " , response.data.length);
-      setRecipe(response.data[0]);
+  // axios.request(options).then(function (response) {
+  //     console.log("...response.data is: " , response.data);
+  //     console.log("...response.data.length is: " , response.data.length);
+  //     setRecipe(response.data[0]);
 
-      console.log("...response.data.ingredients is: " , response.data[0].ingredients);
-      console.log("...response.data.ingredients.length is: " , response.data[0].ingredients.length);//8
+  //     console.log("...response.data.ingredients is: " , response.data[0].ingredients);
+  //     console.log("...response.data.ingredients.length is: " , response.data[0].ingredients.length);//8
 
-      for(let i=0 ; i<response.data[0].ingredients.length ; i++){
-          console.log(response.data[0].ingredients[i].servingSize);
-      }
+  //     for(let i=0 ; i<response.data[0].ingredients.length ; i++){
+  //         console.log(response.data[0].ingredients[i].servingSize);
+  //     }
 
       
       
-  }).catch(function (error) {
-      console.error(error);
-  });
+  // }).catch(function (error) {
+  //     console.error(error);
+  // });
 
 
 } , []);
@@ -73,7 +73,7 @@ return(<>
         
             <div className="card" style={{width: "100%"}}>
             <img src={recipe.image} className="card-img-top" alt="recipe_img"/>
-                <div class="card-body">
+                <div className="card-body">
                     <h5 className="card-title">{recipe.name}</h5>
 
                     <p className="card-text">{recipe.description}</p>

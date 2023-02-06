@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  html {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  /*-------------------------------------------*/
+
+
+div.container h1{
+    padding: 1em;
+    border:1px solid indigo;
+    margin:1em;
+    text-align: center;
+}
+
+
+#title1page1{
+    color:skyblue;
+}
+
+#title2page2{
+    color:olive;
+}

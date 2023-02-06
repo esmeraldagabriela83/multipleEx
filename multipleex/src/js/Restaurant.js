@@ -64,17 +64,17 @@ return(<>
  
 <article className="container" style={{display:"flex" , alignItems:"center" , justifyContent:"center", flexWrap:"wrap" , padding:"1em" , border:"1px solid pink"}}>
 
-<div class="card" style={{width:"300px"}}>
-  <img src={restaurantApi.photo.images.large.url} class="card-img-top" alt="restaurant-img-api"/>
-  <div class="card-body">
-    <h5 class="card-title">ID : {restaurantApi.location_id}</h5>
-    <h5 class="card-title">Name : {restaurantApi.name}</h5>
-    <h5 class="card-title">Timezone : {restaurantApi.timezone}</h5>
-    <h5 class="card-title">Location : {restaurantApi.location_string}</h5>
-    <h5 class="card-title">Price : {restaurantApi.price}</h5>
-    <h5 class="card-title">Phone : {restaurantApi.phone}</h5>
-    <h5 class="card-title">Email : {restaurantApi.email}</h5>
-    <a href="https://rapidapi.com/apidojo/api/travel-advisor" target="_blank" class="btn btn-primary">restaurant rapid API</a>
+<div className="card" style={{width:"300px"}}>
+  <img src={restaurantApi.photo.images.large.url} className="card-img-top" alt="restaurant-img-api"/>
+  <div className="card-body">
+    <h5 className="card-title">ID : {restaurantApi.location_id}</h5>
+    <h5 className="card-title">Name : {restaurantApi.name}</h5>
+    <h5 className="card-title">Timezone : {restaurantApi.timezone}</h5>
+    <h5 className="card-title">Location : {restaurantApi.location_string}</h5>
+    <h5 className="card-title">Price : {restaurantApi.price}</h5>
+    <h5 className="card-title">Phone : {restaurantApi.phone}</h5>
+    <h5 className="card-title">Email : {restaurantApi.email}</h5>
+    <a href="https://rapidapi.com/apidojo/api/travel-advisor" target="_blank" className="btn btn-primary">restaurant rapid API</a>
   </div>
 </div>
 

@@ -27,25 +27,25 @@ useEffect(() =>{
 //------------------------------
 
 const fetchMovie=(event) =>{
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-            'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
-        }
-    };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+    //         'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
+    //     }
+    // };
     
-    fetch(`https://imdb8.p.rapidapi.com/auto-complete?q=+${endPoint}`, options)
-        .then(response => {
-            return(response.json());
-        })
-        .then(data => {
-            console.log("movie data : " , data);
-            console.log("movie data.d : " , data.d);
-            setMoviesContainer(data.d);
-            console.log("movie data.d.length : " , data.d.length);
-        })
-        .catch(err => console.error(err));
+    // fetch(`https://imdb8.p.rapidapi.com/auto-complete?q=+${endPoint}`, options)
+    //     .then(response => {
+    //         return(response.json());
+    //     })
+    //     .then(data => {
+    //         console.log("movie data : " , data);
+    //         console.log("movie data.d : " , data.d);
+    //         setMoviesContainer(data.d);
+    //         console.log("movie data.d.length : " , data.d.length);
+    //     })
+    //     .catch(err => console.error(err));
 }
 
 //-------------------------------

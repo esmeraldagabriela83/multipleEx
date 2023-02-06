@@ -36,26 +36,26 @@ function TravelAdvisor(props){
   //----------------------------
 
 useEffect(() =>{
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-      'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-    }
-  };
+  // const options = {
+  //   method: 'GET',
+  //   headers: {
+  //     'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+  //     'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+  //   }
+  // };
   
-  fetch('https://travel-advisor.p.rapidapi.com/attractions/list-by-latlng?longitude=109.19553&latitude=12.235588&lunit=km&currency=USD&lang=en_US', options)
-    .then(response => response.json())
-    .then(response => {
-      console.log("TravelAsvisor response" , response);
-      console.log("TravelAsvisor response.data" , response.data);
-      console.log("TravelAsvisor response.data.length" , response.data.length);
-      console.log("TravelAsvisor response.data[15]" , response.data[15]);
-      setTravelAPI(response.data[15]);
-      console.log("TravelAsvisor response.data[15].name" , response.data[15].name);
-      console.log("TravelAsvisor response.data[15].photo.caption" , response.data[15].photo.caption);
-    })
-    .catch(err => console.error(err));
+  // fetch('https://travel-advisor.p.rapidapi.com/attractions/list-by-latlng?longitude=109.19553&latitude=12.235588&lunit=km&currency=USD&lang=en_US', options)
+  //   .then(response => response.json())
+  //   .then(response => {
+  //     console.log("TravelAsvisor response" , response);
+  //     console.log("TravelAsvisor response.data" , response.data);
+  //     console.log("TravelAsvisor response.data.length" , response.data.length);
+  //     console.log("TravelAsvisor response.data[15]" , response.data[15]);
+  //     setTravelAPI(response.data[15]);
+  //     console.log("TravelAsvisor response.data[15].name" , response.data[15].name);
+  //     console.log("TravelAsvisor response.data[15].photo.caption" , response.data[15].photo.caption);
+  //   })
+  //   .catch(err => console.error(err));
 } , []);
 
   //----------------------------
