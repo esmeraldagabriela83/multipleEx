@@ -354,3 +354,88 @@ seasonBtn.addEventListener("click" , function(event){
       }
 
 });
+
+//----------19042022-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const horse={
+  name: "Pexels Horse",
+  yearOfBirth: 2000,
+  proffesion: "travelling on 4 foot",
+  imgHorse:"https://images.pexels.com/photos/15118224/pexels-photo-15118224.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+};
+
+const horseNameParagrah=document.getElementById("horseNameParagrah");
+horseNameParagrah.style.border="1px solid green";
+horseNameParagrah.style.padding="0.5em";
+horseNameParagrah.style.margin="0.5em";
+horseNameParagrah.style.color="green";
+horseNameParagrah.innerText=horse.name + " is " + `${(new Date()).getFullYear() - horse.yearOfBirth}` + " years old and has the proffesion of: " + horse.proffesion ;
+
+
+const horse_obj_img=document.getElementById("horse_obj_img");
+horse_obj_img.src=horse.imgHorse;
+horse_obj_img.style.width="300px";
+horse_obj_img.style.border="3px solid green";
+
+/////--
+
+function whoAreYouHorse(horseObj){
+  return`
+  My name is : ${horseObj.name} . 
+  I am ${(new Date()).getFullYear() - horseObj.yearOfBirth} years old .
+  My profession is : ${horseObj.proffesion} .
+  `;
+}
+
+console.log(whoAreYouHorse(horse));
+
+const titleHorse=document.getElementById("titleHorse");
+titleHorse.style.border="1px solid cyan";
+titleHorse.style.padding="0.5em";
+titleHorse.style.margin="0.5em";
+titleHorse.style.color="cyan";
+titleHorse.innerText=whoAreYouHorse(horse);
+
+////------------19042022
+
+function horseHTML(horseObj){
+
+const articleTag=`
+  <article>
+  <p style="color:tomato">Name is ${horseObj.name}</p>
+  <p>Age of horse: ${(new Date()).getFullYear() - horseObj.yearOfBirth}</p>
+  <p>Name is ${horseObj.proffesion}</p>
+  <img src=${horseObj.imgHorse} alt="horse_img_html_function" style="width:300px"/>
+  </article>
+`
+  return articleTag;
+}
+
+const horseSection=document.getElementById("horseSection");
+
+horseSection.style.border="1px solid tomato";
+
+horseSection.innerHTML=horseHTML(horse);
+
+//-------------19042022
+
+function horseDOM(horseObj){
+
+const articleHorse=document.createElement("article");
+articleHorse.style.border="1px solid cyan";
+articleHorse.style.color="cyan";
+articleHorse.style.fontWeight="bold";
+articleHorse.style.margin="0.5em";
+articleHorse.style.padding="0.5em";
+articleHorse.innerText=`
+My name is : ${horseObj.name} . 
+I am ${(new Date()).getFullYear() - horseObj.yearOfBirth} years old .
+My profession is : ${horseObj.proffesion} .
+`;
+
+return articleHorse;
+
+}
+
+const horseSectionDOM=document.getElementById("horseSectionDOM");
+horseSectionDOM.appendChild(horseDOM(horse));
