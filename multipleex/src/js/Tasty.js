@@ -19,31 +19,31 @@ const [tastyFood , setTastyFood]=useState([]);
 
 useEffect(() =>{
 
-    const options = {
-        method: 'GET',
-        url: 'https://tasty.p.rapidapi.com/recipes/auto-complete',
-        params: {prefix: 'chicken soup'},
-        headers: {
-          'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-          'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
-        }
-      };
+    // const options = {
+    //     method: 'GET',
+    //     url: 'https://tasty.p.rapidapi.com/recipes/auto-complete',
+    //     params: {prefix: 'chicken soup'},
+    //     headers: {
+    //       'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+    //       'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+    //     }
+    //   };
       
-      axios.request(options).then(function (response) {
-          console.log("tasty response.data is : " , response.data);
-          console.log("tasty response.data.results is : " , response.data.results);
-          setTastyFood(response.data.results);
-          console.log("tasty response.data.results.length is : " , response.data.results.length);
+    //   axios.request(options).then(function (response) {
+    //       console.log("tasty response.data is : " , response.data);
+    //       console.log("tasty response.data.results is : " , response.data.results);
+    //       setTastyFood(response.data.results);
+    //       console.log("tasty response.data.results.length is : " , response.data.results.length);
     
-        for(let i=0 ; i<response.data.results.length ; i++){
-            console.log("///type: " , response.data.results[i].type);
-            console.log("///display: " , response.data.results[i].display);
-            console.log("///search_value: " , response.data.results[i].search_value);
-        }
+    //     for(let i=0 ; i<response.data.results.length ; i++){
+    //         console.log("///type: " , response.data.results[i].type);
+    //         console.log("///display: " , response.data.results[i].display);
+    //         console.log("///search_value: " , response.data.results[i].search_value);
+    //     }
     
-      }).catch(function (error) {
-          console.error(error);
-      });
+    //   }).catch(function (error) {
+    //       console.error(error);
+    //   });
 
 }, []);
 

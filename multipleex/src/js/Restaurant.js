@@ -30,27 +30,27 @@ const [restaurantApi , setRestaurantApi]=useState({
 //----------------------
 
 useEffect(() =>{
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-            'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-        }
-    };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+    //         'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+    //     }
+    // };
     
-    fetch('https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?latitude=12.91285&longitude=100.87808&limit=30&currency=USD&distance=2&open_now=false&lunit=km&lang=en_US', options)
-        .then(response => {
-            return(response.json());
-        })
-        .then(response => {
-            console.log("restaurant response: " , response);
-            console.log("restaurant response.data: " , response.data);
-            console.log("restaurant response.data.length: " , response.data.length);
+    // fetch('https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?latitude=12.91285&longitude=100.87808&limit=30&currency=USD&distance=2&open_now=false&lunit=km&lang=en_US', options)
+    //     .then(response => {
+    //         return(response.json());
+    //     })
+    //     .then(response => {
+    //         console.log("restaurant response: " , response);
+    //         console.log("restaurant response.data: " , response.data);
+    //         console.log("restaurant response.data.length: " , response.data.length);
 
-            console.log("restaurant response.data[14]: " , response.data[14]);
-            setRestaurantApi(response.data[14]);
-        })
-        .catch(err => console.error(err));
+    //         console.log("restaurant response.data[14]: " , response.data[14]);
+    //         setRestaurantApi(response.data[14]);
+    //     })
+    //     .catch(err => console.error(err));
 } , []);
 
 //--------------------------

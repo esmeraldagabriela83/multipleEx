@@ -321,6 +321,7 @@ function App() {
     <ul>
       <li style={{padding:"1em" , border:"1px solid brown", margin:"0.5em"}}><a href="page1.html">page 1</a></li>
       <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page2.html">page 2</a></li>
+      <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page3.html">page 3</a></li>
     </ul>
 
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
@@ -479,7 +480,7 @@ function App() {
     <CatAxios propColor={"forestgreen"} propNr={20} propText={"CatAxios"}/>
     <Agify propColor={"crimson"} propNr={200} propText={"Agify"}/>
     <Joke propColor={"DimGray"} propNr={210} propText={"Joke"}/>
-    <Tasty propColor={"Chartreuse"} propNr={215} propText={"Tasty"}/>
+    {/* <Tasty propColor={"Chartreuse"} propNr={215} propText={"Tasty"}/> */}
     {/* <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/> */}
     <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
     <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/>
@@ -487,7 +488,7 @@ function App() {
     {/* <Movie propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/> */}
     <Food2 propColor={"Darkorange"} propNr={315} propText={"Food2"}/>
     {/* <TravelAdvisor propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/> */}
-    <Restaurant propColor={"LimeGreen"} propNr={315} propText={"Restaurant"}/>
+    {/* <Restaurant propColor={"LimeGreen"} propNr={315} propText={"Restaurant"}/> */}
     {/* <CarDataAPI propColor={"LightSlateGray"} propNr={3155} propText={"CarDataAPI"}/> */}
     {/* <DoppelAvatars propColor={"DarkViolet"} propNr={375} propText={"DoppelAvatars"}/> */}
     {/* <FlightRadar propColor={"DarkKhaki"} propNr={30} propText={"FlightRadar"}/> */}

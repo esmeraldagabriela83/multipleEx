@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Frog2json",
+        "yearOfBirth": 2019,
+        "proffesion": "Lord of pondJSON",
+        "imgPhoto":"https://images.pexels.com/photos/753250/pexels-photo-753250.jpeg?auto=compress&cs=tinysrgb&w=1600"    
+    },
+    {
+        "name": "Frog3json",
+        "yearOfBirth": 2019,
+        "proffesion": "Lord of lakeJSON",
+        "imgPhoto":"https://images.pexels.com/photos/1888839/pexels-photo-1888839.jpeg?auto=compress&cs=tinysrgb&w=1600"    
+    },
+    {
+        "name": "Frog3json",
+        "yearOfBirth": 2019,
+        "proffesion": "Lord of spingJSON",
+        "imgPhoto":"https://images.pexels.com/photos/753249/pexels-photo-753249.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+    }
+]
