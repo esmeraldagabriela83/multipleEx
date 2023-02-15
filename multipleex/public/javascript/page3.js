@@ -94,8 +94,111 @@ const obj2={
 console.log("obj2 is : " , obj2);
 
 const obj4={...obj2};
-obj2.aKey="modificare proprietate a";
+obj2.aKey="MODIFICARE proprietate a";
 
 console.log("obj2 second console is : " , obj2);
 console.log("obj4 second console is : " , obj4);
+console.log("keys:" , Object.keys(obj2));
+console.log("values:" , Object.values(obj2));
+
+const obj2id=document.getElementById("obj2id");
+obj2id.innerText=Object.keys(obj2).join(" , ") + " : " + Object.values(obj2).join(" , ");
+
+const obj4id=document.getElementById("obj4id");
+obj4id.innerText=Object.keys(obj4).join(" , ") + " : " + Object.values(obj4).join(" , ");
+
+//ex 3 rest spread 19042022
+
+let people = [{
+  person: "Kim Yoo Suk",
+  profession: "vaulter"
+},
+{
+  person: "Sue Yoo",
+  profession: "lawyer"
+},
+{
+  person: "Dr. Alden Cockburn",
+  profession: "urologist"
+},
+{
+  person: "Rusty Kuntz",
+  profession: "coach"
+}
+];
+
+console.log("people array original is : " , people);
+
+//adauga elemente in arr people
+
+const newPeople = [...people];
+console.log("new people array is : ", newPeople);
+
+function setFunnyName(...args) {
+  console.log("---my args : ", args);
+  args.forEach(element => {
+    newPeople.push(element);
+  });
+}
+
+//apel functie
+setFunnyName({
+  person: "a",
+  profession: "b"
+}, {
+  person: "c",
+  profession: "d"
+}, {
+  person: "e",
+  profession: "f"
+});
+console.log("---new people array after function call is : ", newPeople);
+
+
+//apel functie
+setFunnyName({
+  person: "aa",
+  profession: "bb"
+}, {
+  person: "cc",
+  profession: "dd"
+}, {
+  person: "ee",
+  profession: "ff"
+});
+
+
+//afiseaza elementele din people arr
+
+const peopleDivs=newPeople.map((el , index) =>{
+
+let divSinglePerson=document.createElement("div");
+
+divSinglePerson.style.border="3px solid indigo";
+divSinglePerson.style.padding="1em";
+divSinglePerson.style.margin="1em";
+divSinglePerson.innerText=el.person + " has the profession of " + el.profession;
+
+//map are intotdeauna return
+  return divSinglePerson;
+});
+
+const peopleArticle2=document.createElement("article");
+peopleArticle2.style.border="3px solid yellowgreen";
+peopleArticle2.style.padding="1em";
+peopleArticle2.style.margin="1em";
+
+peopleDivs.forEach((el , index) =>{
+  //el reprezinta fiecare divSinglePerson
+  peopleArticle2.appendChild(el);
+});
+
+const peopleSection=document.getElementById("peopleSection");
+peopleSection.style.border="3px solid green";
+peopleSection.style.padding="1em";
+peopleSection.style.margin="1em";
+
+peopleSection.appendChild(peopleArticle2);
+
+
 

@@ -322,6 +322,7 @@ function App() {
       <li style={{padding:"1em" , border:"1px solid brown", margin:"0.5em"}}><a href="page1.html">page 1</a></li>
       <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page2.html">page 2</a></li>
       <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page3.html">page 3</a></li>
+      <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page4.html">page 4</a></li>
     </ul>
 
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
