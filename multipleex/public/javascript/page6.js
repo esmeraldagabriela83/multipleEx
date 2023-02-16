@@ -1,0 +1,1 @@
+console.log("hello from page 6.js");
