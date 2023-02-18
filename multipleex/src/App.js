@@ -325,6 +325,7 @@ function App() {
       <li style={{padding:"1em" , border:"1px solid gold", margin:"0.5em"}}><a href="page4.html">page 4</a></li>
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page5.html">page 5</a></li>
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page6.html">page 6</a></li>
+      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page7.html">page 7</a></li>
     </ul>
 
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
@@ -485,11 +486,11 @@ function App() {
     <Joke propColor={"DimGray"} propNr={210} propText={"Joke"}/>
     {/* <Tasty propColor={"Chartreuse"} propNr={215} propText={"Tasty"}/> */}
     {/* <Recipe propColor={"LightSeaGreen"} propNr={2015} propText={"Recipe"}/> */}
-    <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/>
-    <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/>
-    <Living propColor={"green"} propNr={2315} propText={"Living"}/>
+    {/* <Dessert propColor={"Thistle"} propNr={2015} propText={"Dessert"}/> */}
+    {/* <Food propColor={"yellowgreen"} propNr={2315} propText={"Food"}/> */}
+    {/* <Living propColor={"green"} propNr={2315} propText={"Living"}/> */}
     {/* <Movie propColor={"BurlyWood"} propNr={20315} propText={"Movie"}/> */}
-    <Food2 propColor={"Darkorange"} propNr={315} propText={"Food2"}/>
+    {/* <Food2 propColor={"Darkorange"} propNr={315} propText={"Food2"}/> */}
     {/* <TravelAdvisor propColor={"DeepPink"} propNr={315} propText={"TravelAdvisor"}/> */}
     {/* <Restaurant propColor={"LimeGreen"} propNr={315} propText={"Restaurant"}/> */}
     {/* <CarDataAPI propColor={"LightSlateGray"} propNr={3155} propText={"CarDataAPI"}/> */}

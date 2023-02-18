@@ -215,3 +215,41 @@ const carParagraphFunc=document.getElementById("carParagraphFunc");
     userMoney ? yesMoney(carInput.value) : noMoney(carInput.value);
 
   })
+
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  //13 04 2022
+
+  //exemplu didactic
+
+function testX(a,b){
+  if( a > b) {
+    return function(x){
+      return a + x;
+    }
+  } else {
+    return function(x){
+      return b + x;
+    }
+  }
+};
+var z = testX(2,4);
+
+
+console.log("ZZZ = ",z,z(5));
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function myTest(a , b , x){
+  if(a > b){
+    return a + x ;
+  }else{
+    return b + x ;
+  }
+};
+
+var myz=myTest(100 , 200 , 300);
+console.log("myz is : " , myz);
+
+var myzz=myTest(700 , 50 , 100);
+console.log("myzz is : " , myzz);

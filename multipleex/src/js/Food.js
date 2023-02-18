@@ -19,23 +19,23 @@ const [endPoint , setEndPoind]=useState("");
 //--------------------------------------
 useEffect(()=>{
     
-    const options = {
-        method: 'GET',
-        headers: {
-          'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-          'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
-        }
-      };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //       'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+    //       'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
+    //     }
+    //   };
       
-      fetch(`https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=+${query}`, options)
-        .then(response => response.json())
-        .then(response => {
-          console.log("---food response" , response);
-          console.log("---food response.hints" , response.hints);
-          setFoodContainer(response.hints);
-          console.log("---food response.hints.length" , response.hints.length);
-        })
-        .catch(err => console.error(err));
+    //   fetch(`https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=+${query}`, options)
+    //     .then(response => response.json())
+    //     .then(response => {
+    //       console.log("---food response" , response);
+    //       console.log("---food response.hints" , response.hints);
+    //       setFoodContainer(response.hints);
+    //       console.log("---food response.hints.length" , response.hints.length);
+    //     })
+    //     .catch(err => console.error(err));
 
 } , [endPoint])
 

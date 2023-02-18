@@ -17,26 +17,26 @@ const [citiesArr , setCitiesArr]=useState([]);
 
 
   useEffect(() =>{
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
-            'X-RapidAPI-Host': 'webcamstravel.p.rapidapi.com'
-        }
-    };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': '08b5381c26msh054d91de7c0c3e5p12d313jsn5f7569645072',
+    //         'X-RapidAPI-Host': 'webcamstravel.p.rapidapi.com'
+    //     }
+    // };
     
-    fetch('https://webcamstravel.p.rapidapi.com/webcams/list/nearby=%7Blat%7D,%7Blng%7D,%7Bradius%7D?lang=en&show=webcams%3Aimage%2Clocation', options)
-        .then(response => response.json())
-        .then(response => {
-            console.log("webcams : ", response);
-            console.log("webcams.status : ", response.status);
-            console.log("webcams.result : ", response.result);
-            console.log("webcams.result : ", response.result);
-            console.log("webcams.result.webcams : ", response.result.webcams);
-            console.log("webcams.result.webcams.length : ", response.result.webcams.length);
-            setCitiesArr(response.result.webcams);
-        })
-        .catch(err => console.error(err));
+    // fetch('https://webcamstravel.p.rapidapi.com/webcams/list/nearby=%7Blat%7D,%7Blng%7D,%7Bradius%7D?lang=en&show=webcams%3Aimage%2Clocation', options)
+    //     .then(response => response.json())
+    //     .then(response => {
+    //         console.log("webcams : ", response);
+    //         console.log("webcams.status : ", response.status);
+    //         console.log("webcams.result : ", response.result);
+    //         console.log("webcams.result : ", response.result);
+    //         console.log("webcams.result.webcams : ", response.result.webcams);
+    //         console.log("webcams.result.webcams.length : ", response.result.webcams.length);
+    //         setCitiesArr(response.result.webcams);
+    //     })
+    //     .catch(err => console.error(err));
   } , []);
 
 
