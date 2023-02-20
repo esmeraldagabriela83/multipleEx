@@ -326,6 +326,9 @@ function App() {
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page5.html">page 5</a></li>
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page6.html">page 6</a></li>
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page7.html">page 7</a></li>
+      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page8.html">page 8</a></li>
+      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page9.html">page 9</a></li>
+      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page10.html">page 10</a></li>
     </ul>
 
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
