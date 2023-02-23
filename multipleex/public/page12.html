@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>12 exercitii multiple navbar sidebar</title>
+
+
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+      <!--------bootstrap icons  CDN---------------------------->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+      <!--------bootstrap icons  CDN---------------------------->
+
+      <link href="css/style.css" rel="stylesheet">
+
+      <style>
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+      </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+        
+        <h1 id="title1page1">this is page 12 navbar sidebar</h1>
+        <p>also search for page 7 html</p>
+     
+    </div>
+
+<ul>
+    <li><a href="index.html">get me to index.html</a></li>
+    <li><a href="page1.html">get me to page 1</a></li>
+    <li><a href="page2.html">get me to page 2</a></li>
+    <li><a href="page3.html">get me to page 3</a></li>
+    <li><a href="page4.html">get me to page 4</a></li>
+    <li><a href="page5.html">get me to page 5</a></li>
+    <li><a href="page6.html">get me to page 6</a></li>
+    <li><a href="page7.html">get me to page 7</a></li>
+    <li><a href="page9.html">get me to page 9</a></li>
+    <li><a href="page10.html">get me to page 10</a></li>
+    <li><a href="page11.html">get me to page 11</a></li>
+    <li><a href="page13.html">get me to page 13</a></li>
+</ul>
+
+    <!-- scrollspy navbar bootstrap -->
+   
+    <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>
+            This is some placeholder content for the scrollspy page.<br> Note that as you scroll down the page, the appropriate navigation link is highlighted.<br> It's repeated throughout the component example.<br> We keep adding some more example copy here to emphasize the scrolling and highlighting.<br>
+            This is some placeholder content for the scrollspy page.<br> Note that as you scroll down the page, the appropriate navigation link is highlighted.<br>
+            This is some placeholder content for the scrollspy page.<br> Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        </p>
+        <img src="./images/yellowCV.jpg" class="rounded mx-auto d-block" alt="yellow_img" style="width:300px">
+
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>
+            This is some placeholder content for the scrollspy page.<br>
+            Note that as you scroll down the page, the appropriate navigation link is highlighted.<br>
+            It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.<br>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. <br>
+            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.<br>
+            Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        
+
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>
+            This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.<br> It's repeated throughout the component example.<br> We keep adding some more example copy here to emphasize the scrolling and highlighting.
+        </p>
+        <img src="./images/umbrella.jpg" class="rounded mx-auto d-block" alt="umbrella_img" style="width:300px">
+
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>
+            This is some placeholder content for the scrollspy page.<br>
+            Note that as you scroll down the page, the appropriate navigation link is highlighted.<br>
+            It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.<br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+       
+        <img src="./images/nature54.jpg" class="rounded mx-auto d-block" alt="nature_img" style="width:300px"> 
+        <p>
+            This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+        </p>
+       
+        <img src="./images/nature54.jpg" class="rounded mx-auto d-block" alt="nature_img" style="width:300px"> 
+    
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>
+            This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+        </p>
+        <img src="./images/pizza.jpg" class="rounded mx-auto d-block" alt="pizza_img" style="width:300px"> 
+      </div>
+      
+<!-- scrollspy navbar bootstrap -->
+
+
+
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <article class="container" style="border:1px solid olive ; padding:0.5em ; margin:0.5em">
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span><br>
+          <img src="./images/forest-flower.JPG" style="width:50% ; border:3px solid red" alt="collapsed img">
+          <p>lorem ipsum ....</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-body-text" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5Zm0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
+              </svg>
+              <span>toggle content</span>
+          </button>
+        </div>
+      </nav>
+
+  </article>
+
+<!-- vertical tabs w 3 school -->
+
+    <h2>Vertical Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          </div>
+          
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            <img src="https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded mx-auto d-block" alt="london_img" style="width:300px">
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+            <img src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded mx-auto d-block" alt="paris_img" style="width:300px">
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+            <img src="https://images.pexels.com/photos/2614818/pexels-photo-2614818.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded mx-auto d-block" alt="tokyo_img" style="width:300px">
+          </div>
+
+
+
+<!-- Scrollspy Vertical Menu w 3 school -->
+
+<!-- https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp -->
+
+  
+
+  </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="javascript/page12.js"></script>
+</html>

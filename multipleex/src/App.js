@@ -324,11 +324,14 @@ function App() {
       <li style={{padding:"1em" , border:"1px solid tomato", margin:"0.5em"}}><a href="page3.html">page 3</a></li>
       <li style={{padding:"1em" , border:"1px solid gold", margin:"0.5em"}}><a href="page4.html">page 4</a></li>
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page5.html">page 5</a></li>
-      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page6.html">page 6</a></li>
+      <li style={{padding:"1em" , border:"1px solid red", margin:"0.5em"}}><a href="page6.html">page 6</a></li>
       <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page7.html">page 7</a></li>
-      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page8.html">page 8</a></li>
-      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page9.html">page 9</a></li>
-      <li style={{padding:"1em" , border:"1px solid forestgreen", margin:"0.5em"}}><a href="page10.html">page 10</a></li>
+      <li style={{padding:"1em" , border:"1px solid gold", margin:"0.5em"}}><a href="page8.html">page 8</a></li>
+      <li style={{padding:"1em" , border:"1px solid blue", margin:"0.5em"}}><a href="page9.html">page 9 dropdown menu</a></li>
+      <li style={{padding:"1em" , border:"1px solid magenta", margin:"0.5em"}}><a href="page10.html">page 10</a></li>
+      <li style={{padding:"1em" , border:"1px solid yellow", margin:"0.5em"}}><a href="page11.html">page 11</a></li>
+      <li style={{padding:"1em" , border:"1px solid blue", margin:"0.5em"}}><a href="page12.html">page 12</a></li>
+      <li style={{padding:"1em" , border:"1px solid green", margin:"0.5em"}}><a href="page13.html">page 13</a></li>
     </ul>
 
     <MainPage propColor={"DarkRed"} propNr={40} propText={"MainPage"}/>
