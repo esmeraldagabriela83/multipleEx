@@ -523,6 +523,10 @@ function App() {
       </Routes>
 
      </Router>
+
+
+     <p>my text added</p>
+     <p>sec text added from home</p>
     
     <Footer propColor={"OrangeRed"} propNr={75} propText={"Footer"}/>
 
