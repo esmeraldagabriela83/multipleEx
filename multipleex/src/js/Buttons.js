@@ -2,6 +2,7 @@ import React , {useState} from "react";
 
 function Buttons(props){
 
+  //09.05.2022
 
   //destructurare props
   const {propColor , propNr , propText}=props;
@@ -31,6 +32,34 @@ const handleInputChange=(event)=>{
     setParagraphString(valueUser);
   }
 
+
+  //------------------------------------------------
+
+const firstButtonClick=(event)=>{
+  event.preventDefault();
+
+  console.log("you clicked the nr 1 btn");
+}
+
+//------------------------------------------------------
+
+const secondButtonClick = (event) =>{
+  const a = parseInt(prompt("A:"));
+  const b = parseInt(prompt("B:"));
+
+  console.log(`${a}^${b} = ${Math.pow(a,b)} `);
+}
+
+//-----------------------------------------------------------
+
+const thirdButtonClick = (event) =>{
+  console.log(window.innerHeight, window.innerWidth);
+
+
+  console.log("window.innerHeight is : " , window.innerHeight);
+  console.log("window.innerWidth is : " , window.innerWidth);
+}
+
   //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   return(
@@ -39,6 +68,7 @@ const handleInputChange=(event)=>{
   <h1 style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>function component is : {propText}</h1>
   </article>
 
+<article style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>
   <label htmlFor="userInputText123"></label><br></br>
   <input type="text" name="userText" id="userInputText123" onChange={handleInputChange}/><br></br>
 
@@ -47,6 +77,17 @@ const handleInputChange=(event)=>{
   <p>{valueUser}</p>
 
   <h3>{paragraphString}</h3>
+</article>
+
+<article style={{border:`1px solid ${propColor}` , padding:'0.5em' , margin:'1em', color:propColor}}>
+
+<button onClick={firstButtonClick}>Button 1 Click!</button>
+
+<button onClick={secondButtonClick}>Button 2 Click!</button>
+
+<button onClick={thirdButtonClick}>Button 3 Click! innerWidth / innerHeight</button>
+
+</article>
 
     </>
   );
