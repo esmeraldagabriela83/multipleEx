@@ -67,6 +67,9 @@ import CarDataAPI from "./js/CarDataAPI.js";
 //import FlightRadar from "./js/FlightRadar.js";
 //import LocalBusiness from "./js/LocalBusiness.js";
 
+import WindowsAfter from "./js/WindowsAfter";
+import Buttons from "./js/Buttons.js";
+
 
 import Page1 from "./pages/Page1.js";
 import Page2 from "./pages/Page2.js";
@@ -505,7 +508,8 @@ function App() {
     {/* <LocalBusiness propColor={"DarkTurquoise"} propNr={50} propText={"LocalBusiness"}/> */}
 
 
-   
+    <WindowsAfter propColor={"olive"} propNr={2510} propText={"WindowsAfter"}/>
+    <Buttons propColor={"magenta"} propNr={510} propText={"Buttons"}/>
 
 
     <Router>
@@ -527,6 +531,7 @@ function App() {
 
      <p>my text added</p>
      <p>sec text added from home</p>
+     <p style={{color:"indigo" , fontWeight:"bold"}}>new text paragraph after windows reinstall from app js</p>
     
     <Footer propColor={"OrangeRed"} propNr={75} propText={"Footer"}/>
 
